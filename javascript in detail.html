@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        document.write(typeof 42); //"number"
+        document.write(typeof 'Alex');  //"string"
+        document.write(typeof true);  //"boolean"
+        var score = 100;
+        document.write(typeof score); //"number"
+
+        var age = 12;
+        String(age)   ; // "12" (now text)
+        document.write(typeof String(age));  //"string"
+        Number("25")   //25 (now a number)
+        Number("hello")  //NaN (cannot convert)
+
+        var sentence = "The dragon flew over the big castle.";
+        sentence.search("dragon")      //4
+        sentence.search("wizard")      //-1(not found)
+        sentence.replace( "dragon","wizard") 
+// "The wizard flew over the big castle."
+
+
+try {
+var n = Number(userInput);
+if (isNaN(n)) { throw "Please type a valid number!"; }
+console.log(100 / n);
+} catch(err) {
+console.log("Error: " + err);
+}
+    </script>
+</body>
+</html>
